@@ -22,7 +22,7 @@ let session = expressSession({
 	saveUninitialized: true,
 	store: new SequelizeStore({ db: sequelize })
 })
-if(process.env.NODE_ENV === 'production') {
+if(process.env.NODE_ENV === 'development') {
 	app.set('trust proxy', 1);
 }
 

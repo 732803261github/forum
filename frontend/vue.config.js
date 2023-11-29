@@ -1,6 +1,7 @@
 module.exports = {
 	devServer: {
-		proxy: 'http://localhost:3008'
+		proxy: 'http://43.130.230.251:3008'
 	},
-	publicPath: '/static'
+	publicPath: '/static',
+  port: 3009
 }
